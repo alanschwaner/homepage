@@ -7,10 +7,16 @@ import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './main/main.component';
+import { AboutComponent } from './about/about.component';
+import { CvComponent } from './cv/cv.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    AboutComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
