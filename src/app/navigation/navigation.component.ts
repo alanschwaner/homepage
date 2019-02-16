@@ -10,6 +10,15 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
+    
+  }
+
+  getabout() {
+
+    alert("'hello");
+
   }
 
 }
