@@ -1,102 +1,29 @@
-
 <div class="row">
   <div class="col-12"> 
       <div class="display-4 text-center animated fadeInUp mt-5 grey-text spacing">  
-        SCHWANER
+        SCHWANER       
       </div>
   </div>
 </div>
-  
 
-
-<div class="row">
-  <div class="col-12 col-md-4 mt-5 mb-2">
-    <!-- Card -->
-    <mdb-card>
-      <div class="view rgba-white-slight waves-light " mdbWavesEffect>
-        <!-- Card img -->
-        <mdb-card-img src="http://www.schwaner.dk/img/alan.jpg" alt="Card image cap"></mdb-card-img>
-        <a>
-          <div class="mask"></div>
-        </a>
-      </div>
-      <!--Card content-->
-      <mdb-card-body>
-        <!--Title-->
-        <mdb-card-title>
-          <h4>Faminie</h4>
-        </mdb-card-title>
-
-        <!--Text-->
-        <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
-          content.
-        </mdb-card-text>
-
-        <a href="#" mdbBtn class="stylish-color" mdbWavesEffect>Button</a>
-      </mdb-card-body>
-    </mdb-card>
-    <!-- Card -->
-  </div>
-
-
-
-  <div class="col-12 col-md-4 mt-5 mb-2">
-  <!-- Card -->
-    <mdb-card>
-      <div class="view rgba-white-slight waves-light" mdbWavesEffect>
-        <!-- Card img -->
-        <mdb-card-img src="http://www.schwaner.dk/img/familie.jpg" alt="Card image cap"></mdb-card-img>
-        <a>
-          <div class="mask"></div>
-        </a>
-      </div>
-      <!--Card content-->
-      <mdb-card-body>
-        <!--Title-->
-        <mdb-card-title>
-          <h4>CV og efaringer</h4>
-        </mdb-card-title>
-
-        <!--Text-->
-        <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
-          content.
-        </mdb-card-text>
-
-        <a href="#" mdbBtn class="stylish-color" mdbWavesEffect>Button</a>
-      </mdb-card-body>
-    </mdb-card>
-    <!-- Card -->
-  </div>
-
-
-  <div class="col-12 col-md-4 mt-5 mb-2">
-    <!-- Card -->
+<div class="row">  
+    <div class="col-12 col-md-4 mt-5 mb-2" *ngFor="let overview of overviews">    
       <mdb-card>
-        <div class="view rgba-white-slight waves-light" mdbWavesEffect>
-          <!-- Card img -->
-          <mdb-card-img src="http://www.schwaner.dk/img/familie.jpg" alt="Card image cap"></mdb-card-img>
+        <div class="view rgba-white-slight waves-light " mdbWavesEffect>        
+          <mdb-card-img src="{{ overview.image }}" alt="Card image cap"></mdb-card-img>
           <a>
             <div class="mask"></div>
           </a>
-        </div>
-        <!--Card content-->
-        <mdb-card-body>
-          <!--Title-->
+        </div>      
+        <mdb-card-body>        
           <mdb-card-title>
-            <h4>Aktivt liv</h4>
+            <h4> {{ overview.overviewtext }} </h4>
           </mdb-card-title>
-  
-          <!--Text-->
-          <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
-            content.
+          <mdb-card-text> 
+              {{ overview.text }}
           </mdb-card-text>
-  
           <a href="#" mdbBtn class="stylish-color" mdbWavesEffect>Button</a>
         </mdb-card-body>
-      </mdb-card>
-      <!-- Card -->
-    </div>
-
-
-
+      </mdb-card>    
+    </div>  
 </div>
